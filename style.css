@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+nav{
+    padding: 15px;
+    background-color: orange;
+    border: 5px dashed olivedrab;
+    display: flex;
+}
+
+h1{
+    margin: 0;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 32pt;
+}
+
+.menu{
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+.menu > li{
+    display: inline;
+    position: relative; 
+}
+
+.menu > li > a{
+    padding: 0 5px 0 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#submenu{
+    position: absolute; 
+    list-style: none;
+    text-decoration: none;
+    top: 25px; 
+    right: 0;
+    display: none;
+}
+
+.menu > li:hover > #submenu, .menu > li.over > #submenu{display: block;}
+
+.menu > li > #submenu > li{ 
+    display: block; 
+    width: 150px;
+}
